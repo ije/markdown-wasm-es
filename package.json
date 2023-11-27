@@ -1,6 +1,6 @@
 {
   "name": "markdown-wasm-es",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Markdown parser and html generator implemented in WebAssembly",
   "type": "module",
   "module": "markdown.js",

@@ -456,12 +456,6 @@ const ne = "undefined" != typeof TextEncoder
       const e = new TextEncoder("utf-8"), n = new TextDecoder("utf-8");
       return { encode: (n) => e.encode(n), decode: (e) => n.decode(e) };
     })()
-    : "undefined" != typeof Buffer
-    ? {
-      encode: (e) => new Uint8Array(Buffer.from(e, "utf-8")),
-      decode: (e) =>
-        Buffer.from(e.buffer, e.byteOffset, e.byteLength).toString("utf8"),
-    }
     : {
       encode: (e) => {
         let n = [];
